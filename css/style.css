@@ -9,8 +9,12 @@
     font-family: 'Oxanium', cursive;
 }
 
+
 body{
     text-align: center;
+
+/* linear-gradient é usado para efeito de degrade */
+
     background: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
 }
@@ -31,7 +35,9 @@ main{
     position: absolute;
     bottom: 55%;
     left: 50%;
+
 /* recebe x e y */
+
     transform: translate(-63%, 20%);
     height: 18%;
 }
@@ -42,7 +48,9 @@ main{
     color: #aaa;
     top: 54.5%;
     right: 27%;
+
 /* Define um minimo, um ideal e um maximo */
+
     font-size: clamp(8px, 5vw, 25px);
 }
 
@@ -61,14 +69,21 @@ main{
 .input__search{
     width: 100%;
     padding: 4%;
+
 /* remove a borda padrao do input */
+
     outline: none;
     border: 2px solid #333;
     border-radius: 5px;
     font-weight: 600;
     color: #3a444d;
+
+/* clamp fornece o tamanho minimo, o ideal e o maximo */
+
     font-size: clamp(8px, 5vw, 1rem);
+
 /* Recebe x e y, o desfoque e a cor */
+
     box-shadow: -3px 3px 0 #888, -5px 6px 0 #333;
 }
 
@@ -90,6 +105,9 @@ main{
     font-weight: 600;
     color: #fff;
     background-color: #444;
+
+
+
     box-shadow: -2px 3px 0 #222, -4px 4px 0 #000;
 }
 

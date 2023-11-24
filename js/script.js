@@ -90,6 +90,6 @@ btnNext.addEventListener('click', () =>{
     renderPokemon(searchPoke);
 });
 
-
+// chama a função e renderiza o primeiro pokemon
 
 renderPokemon(searchPoke);

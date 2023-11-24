@@ -1,13 +1,20 @@
+// Declaração e seleção das classes no HTML
+
 const pokeName = document.querySelector('.pokemon__name');
 const pokeNumber = document.querySelector('.pokemon__number');
 const pokeImg = document.querySelector('.pokemon__image');
-
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
 const btnPrev = document.querySelector('.btn-prev');
 const btnNext = document.querySelector('.btn-next');
 
+// Seleção de pokemon inicial
+
 let searchPoke = 1;
+
+// Aqui armazenamos o retorno completo da API
+// Usamos async para declaram a função como assíncrona
+// Dentro de uma função async, você pode usar a palavra-chave await para pausar a execução da função até que a promessa seja resolvida ou rejeitada.
 
 const fetchPokemon = async (pokemon) =>{
     const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -16,7 +23,6 @@ const fetchPokemon = async (pokemon) =>{
         const data =  await APIresponse.json();
         return data
     }
-    
 }
 
 const renderPokemon = async (pokemon) =>{

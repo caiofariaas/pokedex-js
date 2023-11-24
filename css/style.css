@@ -106,13 +106,15 @@ main{
     color: #fff;
     background-color: #444;
 
-
+/* é possivel colocar duas bordas em um mesmo box-shadow */
 
     box-shadow: -2px 3px 0 #222, -4px 4px 0 #000;
 }
 
 .button:active{
+
+/* Para quando se aperta o botão, inset mostra que será uma borda inferior */
+
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
-

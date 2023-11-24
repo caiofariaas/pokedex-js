@@ -74,12 +74,16 @@ form.addEventListener('submit', (event) =>{
     renderPokemon(input.value.toLowerCase());
 });
 
+// btnPrev chama a função renderPokemon e volta ao pokemon anterior
+
 btnPrev.addEventListener('click', () =>{
     if (searchPoke > 1){
         searchPoke -= 1;
         renderPokemon(searchPoke);
     }
 });
+
+// btnNext chama a função renderPokemon e volta ao pokemon anterior
 
 btnNext.addEventListener('click', () =>{
     searchPoke += 1;
